@@ -2,9 +2,9 @@ unsigned cnt;
 void interrupt() {
     cnt++;                   
     TMR0 = 177;                
-    INTCON = 0x20;            
+    INTCON = 0xA5;            
 void main() {
-    OPTION_REG = 0x84;        
+    OPTION_REG =00000111;        
     TRISB = 0;                
     PORTB = 0x0;              
     TMR0 = 177;                
